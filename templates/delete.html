@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Delete A Movie</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css" />
+    <style>
+      :root {
+        --brand-color: #dc6e7c;
+        --darkest-color: #262730;
+        --dark-color: #434553;
+        --mid-color: #8084a1;
+        --light-color: #c6cae6;
+        --lightest-color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Delete A Movie</h1>
+    <form id="delete-form">
+      <label for="movie-title">Movie ID:</label>
+      <input type="text" id="movie-id" name="movie-id" required />
+      <br /><br />
+    </form>
+    <button type="button" id="delete-button" onclick="deleteMovieById()">
+      Delete
+    </button>
+    <div id="delete-result"></div>
+
+    <script src="/static/api.js"></script>
+  </body>
+</html>

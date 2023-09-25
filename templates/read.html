@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      :root {
+        --brand-color: #dc6e7c;
+        --darkest-color: #262730;
+        --dark-color: #434553;
+        --mid-color: #8084a1;
+        --light-color: #c6cae6;
+        --lightest-color: #ffffff;
+      }
+    </style>
+
+    <title>Movie Search</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css" />
+  </head>
+  <body>
+    <h1>Movie Search</h1>
+    <form>
+      <label for="keyword">Search for a Movie:</label>
+      <input type="text" id="keyword" name="keyword" />
+    </form>
+    <button id="search-button" onclick="fetchMovie()">Search</button>
+    <div id="search-results">
+      <script src="/static/api.js"></script>
+    </div>
+  </body>
+</html>

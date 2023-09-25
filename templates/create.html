@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enter Your Favorite Movie</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css" />
+    <style>
+      :root {
+        --brand-color: #dc6e7c;
+        --darkest-color: #262730;
+        --dark-color: #434553;
+        --mid-color: #8084a1;
+        --light-color: #c6cae6;
+        --lightest-color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Enter Your Favorite Movie</h1>
+    <form action="/api/movies/create" method="post">
+      <label for="movie-title">Movie Title</label>
+      <input type="text" id="movie-title" name="movie-title" required /><br />
+      <label for="genre">Genre</label>
+      <input type="text" id="genre" name="genre" required /><br />
+      <br />
+    </form>
+    <button id="create-movie" onclick="createMovie()">Create</button>
+    <div id="create-result"><script src="/static/api.js"></script></div>
+  </body>
+</html>

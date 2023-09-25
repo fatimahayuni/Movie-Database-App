@@ -1,0 +1,26 @@
+:root {
+  --brand-color: #dc6e7c;
+  --darkest-color: #262730;
+  --dark-color: #434553;
+  --mid-color: #8084a1;
+  --light-color: #c6cae6;
+  --lightest-color: #ffffff;
+}
+
+body {
+  background-color: var(--darkest-color);
+  color: var(--lightest-color);
+  font-family: Verdana;
+}
+
+h1 {
+  color: var(--brand-color);
+}
+
+button {
+  background-color: var(--lightest-color);
+  border: 0;
+  outline: 0;
+}
+
+/* Add more CSS rules as needed */
